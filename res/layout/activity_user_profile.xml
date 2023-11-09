@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UserProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@drawable/back_arrow"/>
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/teal_700"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/Image_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/account"/>
+
+            <TextView
+                android:id="@+id/textview_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Full name"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/Image_profile"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/Textview_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview_fullname"
+                android:text="discription"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/Image_profile"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="16dp">
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/edittext_name"
+               android:hint="Full Name"
+               android:layout_marginBottom="10dp">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:drawableStart="@drawable/account"
+                   android:drawablePadding="10dp"
+                   android:text="full name user"/>
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/edittext_email"
+               android:hint="Email"
+               android:layout_marginBottom="10dp">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:drawableStart="@drawable/notifications"
+                   android:drawablePadding="10dp"
+                   android:text="email"/>
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/edittext_phone"
+               android:hint="phone No"
+               android:layout_marginBottom="10dp">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:drawableStart="@drawable/baseline_home_24"
+                   android:drawablePadding="10dp"
+                   android:text="phone number"/>
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/edittext_password"
+               android:hint="password"
+               android:layout_marginBottom="10dp">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:drawableStart="@drawable/baseline_subscriptions_24"
+                   android:drawablePadding="10dp"
+                   android:text="password"/>
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/btn_update"
+               android:text="UPDATE"/>
+           
+       </LinearLayout>
+
+        
+    </LinearLayout>
+
+</ScrollView>

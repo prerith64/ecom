@@ -1,0 +1,16 @@
+<!-- custom_action_bar.xml -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:layout_marginStart="16dp">
+
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/baseline_person"
+    android:clickable="true"
+    android:contentDescription="Profile Icon" />
+</FrameLayout>
